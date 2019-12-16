@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photography Inquiries</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300i|Quicksand&display=swap" rel="stylesheet">
+    <link rel='icon' href='favicon.png' type='image/png'/>
+    <link rel="stylesheet" href="DeBakey-Inquiries-InteractiveWebApplication.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script defer src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="DeBakey-Inquiries-InteractiveWebApplication.js"></script>
+</head>
+<header>
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Name of Website in the top left -->
+        <p><a href="DeBakey-InteractiveWebApplication.html">Maddie Pearson Photography</a></p>
+        <!-- Nav bar options to the right -->
+        <ul>
+            <li><a href="DeBakey-InteractiveWebApplication.html">Home</a></li>
+            <li>
+                <a href="DeBakey-Portfolio-InteractiveWebApplication.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="DeBakey-Inquiries-InteractiveWebApplication.html">Photography Inquiries</a>
+            </li>
+            <li>
+                <a href="#">Other</a>
+                <!-- Additional Drop Down Menu -->
+                <ul>
+                    <li><a href="DeBakey-Contact-InteractiveWebApplication.html">Contact</a></li>
+                    <li><a href="DeBakey-About-InteractiveWebApplication.html">About</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <main class="formWrap">
+        <p class="title">Photography Inquiries</p>
+        <section id="error"></section>
+        <form id="myForm">
+            <label for="name">
+                Name
+                <input type="text" id="name" placeholder="Jeonggug Jeon" required aria-required="true">
+            </label>
+            <label for="email">
+                E-mail
+                <input type="email" id="email" placeholder="email@email.com" required aria-required="true">
+            </label>
+            <label>
+                Packages
+            </label>
+            <input type="radio" name="pkg"  class="formRadio" id="pkg1">
+            <label for="pkg1" class="radioLabel">
+                <div class="pkgDetails">
+                    <h1>Mini Session - $50</h1>
+                    <p>Includes:</p>
+                    <ul>
+                        <li>30 minute session*</li>
+                        <li>up to 6 individuals**</li>
+                        <li>5 - 10 edited photos</li>
+                        <li>print release</li>
+                        <li>online gallery</li>
+                    </ul>
+                    <p>
+                        <br>* session can be extended at an additional cost.
+                        <br>Please inquire in the message box if you would like an extended session.
+                        <br>** a fee of $10 per additional person
+                    </p>
+                </div>
+            </label>
+            <input type="radio" name="pkg"  class="formRadio" id="pkg2">
+            <label for="pkg2" class="radioLabel">
+                <div class="pkgDetails">
+                    <h1>Senior Portraits - $125</h1>
+                    <p>Includes:</p>
+                    <ul>
+                        <li>60 minute session*</li>
+                        <li>10 - 15 edited photos</li>
+                        <li>print release</li>
+                        <li>online gallery</li>
+                    </ul>
+                    <p>
+                        <br>* session can be extended at an additional cost.
+                        <br>Please inquire in the message box if you would like an extended session.
+                    </p>
+                </div>
+            </label>
+            <input type="radio" name="pkg" class="formRadio" id="pkg3">
+                <label for="pkg3" class="radioLabel">
+                    <div class="pkgDetails">
+                        <h1>Family Portraits - $200</h1>
+                        <p>Includes:</p>
+                        <ul>
+                            <li>90 minute session*</li>
+                            <li>up to 6 individuals**</li>
+                            <li>15 - 20 edited photos</li>
+                            <li>print release</li>
+                            <li>online gallery</li>
+                        </ul>
+                        <p>
+                            <br>* session can be extended at an additional cost
+                            <br>Please inquire in the message box if you would like an extended session.
+                            <br>** a fee of $10 per additional person
+                        </p>
+                    </div>
+                </label>
+                <input type="radio" name="pkg" class="formRadio" id="pkg4">
+                <label for="pkg4" class="radioLabel">
+                    <div class="pkgDetails">
+                        <h1>Special Events - $200</h1>
+                        <p>Includes:</p>
+                        <ul>
+                            <li>minimum 120 minute session*</li>
+                            <li>25 - 30 edited photos</li>
+                            <li>print release</li>
+                            <li>online gallery</li>
+                        </ul>
+                        <p>
+                            <br>* session can be extended at an additional cost
+                            <br>Please inquire in the message box if you would like an extended session.
+                        </p>
+                    </div>
+                </label>
+                <input type="radio" name="pkg" class="formRadio" id="pkg5">
+                <label for="pkg5" class="radioLabel">
+                    <div class="pkgDetails">
+                        <h1>Maternity + Newborn Package* - $125/hr</h1>
+                        <p>* Please provide as many details of your request in the "message" section.</p>
+                    </div>
+                </label>
+                <input type="radio" name="pkg" class="formRadio" id="pkg6">
+                <label for="pkg6" class="radioLabel">
+                    <div class="pkgDetails">
+                        <h1>Engagement + Wedding Package* - $125/hr</h1>
+                        <p>* Please provide as many details of your request in the "message" section.</p>
+                    </div>
+                </label>
+            <label>Date</label>
+            <label><input type="text" id="datepicker"></label>
+            <label>
+                Message
+                <textarea id="message" placeholder="Type your message here..." required aria-required="true"></textarea>
+            </label>
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+    <footer id="footer">
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a> <br>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </footer>
+</body>
+</html>

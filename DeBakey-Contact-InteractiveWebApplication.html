@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300i|Quicksand&display=swap" rel="stylesheet">
+    <link rel='icon' href='favicon.png' type='image/png'/>
+    <link rel="stylesheet" href="DeBakey-Contact-InteractiveWebApplication.css">
+    <script defer src="DeBakey-Contact-InteractiveWebApplication.js"></script>
+</head>
+<header>
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Name of Website in the top left -->
+        <p><a href="DeBakey-InteractiveWebApplication.html">Maddie Pearson Photography</a></p>
+        <!-- Nav bar options to the right -->
+        <ul>
+            <li><a href="DeBakey-InteractiveWebApplication.html">Home</a></li>
+            <li>
+                <a href="DeBakey-Portfolio-InteractiveWebApplication.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="DeBakey-Inquiries-InteractiveWebApplication.html">Photography Inquiries</a>
+            </li>
+            <li>
+                <a href="#">Other</a>
+                <!-- Additional Drop Down Menu -->
+                <ul>
+                    <li><a href="DeBakey-Contact-InteractiveWebApplication.html">Contact</a></li>
+                    <li><a href="DeBakey-About-InteractiveWebApplication.html">About</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <div class="formWrap">
+        <p class="title">Contact</p>
+        <div id="error"></div>
+        <form id="myForm">
+            <label for="name">
+                Name
+                <input type="text" id="name" placeholder="Namjun Kim" required aria-required="true">
+            </label>
+            <label for="subject">
+                Subject
+                <input type="text" id="subject" placeholder="Subject" required aria-required="true">
+            </label>
+            <label for="email">
+                E-mail
+                <input type="email" id="email" placeholder="email@email.com" required aria-required="true">
+            </label>
+            <label>
+                Message
+                <textarea id="message" placeholder="Type your message here..." required aria-required="true"></textarea>
+            </label>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer id="footer">
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a> <br>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </footer>
+</body>
+</html>

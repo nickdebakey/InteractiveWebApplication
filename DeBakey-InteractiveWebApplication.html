@@ -1,0 +1,79 @@
+<!--
+Nick DeBakey
+Interactive Web Application
+3135 - Web Application Design and Development
+
+Pages:
+    Index
+        Portfolio
+        Photography Inquiries
+        Other (drop down menu when hovered on)
+            Contact
+            About
+
+Image Carousel:
+    All Horizontal Images with a Navigation Bar
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maddie Pearson Photography</title>
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300i|Quicksand&display=swap" rel="stylesheet">
+    <link rel='icon' href='favicon.png' type='image/png'/>
+    <link rel="stylesheet" href="DeBakey-InteractiveWebApplication.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="DeBakey-InteractiveWebApplication.js"></script>
+</head>
+<header>
+    <!-- Navigation Bar -->
+    <nav>
+        <!-- Name of Website in the top left -->
+        <p><a href="DeBakey-InteractiveWebApplication.html">Maddie Pearson Photography</a></p>
+        <!-- Nav bar options to the right -->
+        <ul>
+            <li><a href="DeBakey-InteractiveWebApplication.html">Home</a></li>
+            <li>
+                <a href="DeBakey-Portfolio-InteractiveWebApplication.html">Portfolio</a>
+            </li>
+            <li>
+                <a href="DeBakey-Inquiries-InteractiveWebApplication.html">Photography Inquiries</a>
+            </li>
+            <li>
+                <a href="#">Other</a>
+                <!-- Additional Drop Down Menu -->
+                <ul>
+                    <li><a href="DeBakey-Contact-InteractiveWebApplication.html">Contact</a></li>
+                    <li><a href="DeBakey-About-InteractiveWebApplication.html">About</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <!-- Slideshow -->
+    <div class="sliderBox">
+        <ul class="slider">
+            <li><img src="ImagesResized/IMG_1183.jpg"></li>
+            <li><img src="ImagesResized/IMG_1185.jpg"></li>
+            <li><img src="ImagesResized/IMG_1928.jpg"></li>
+            <li><img src="ImagesResized/IMG_1930.jpg"></li>
+            <li><img src="ImagesResized/IMG_1934.jpg"></li>
+            <li><img src="ImagesResized/IMG_1936.jpg"></li>
+            <li><img src="ImagesResized/IMG_1938.jpg"></li>
+            <li><img src="ImagesResized/IMG_1939.jpg"></li>
+            <li><img src="ImagesResized/IMG_1940.jpg"></li>
+            <li><img src="ImagesResized/IMG_1942.jpg"></li>
+            <li><img src="ImagesResized/IMG_3094.jpg"></li>
+        </ul>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a> <br>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+    </footer>
+</body>
+</html>
