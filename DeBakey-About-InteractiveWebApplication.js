@@ -1,11 +1,22 @@
 $(document).ready(function () {
-    var url = "https://api.flickr.com/services/feeds/photos_public.gne?id=185631422@N05&format=json&jsoncallback=?";
-    $.getJSON(url, function(data) {
-        var html = "";
-        $.each(data.items, function (i, item) {
-            html += "<img src=\"" + item.media.m + "\">";
-        });
-        $(".bioPhoto").html(html);
+    $.ajax({
+        type: "get",
+        url: "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=05c6316ed081154924c3510fdbef4a46&photoset_id=72157712462890488&extras=original_format&format=json&nojsoncallback=1",
+        beforeSend: function() {
+            $(".bioPhoto").html("Loading...");
+        },
+        timeout: 10000,
+        error: function(xhr, status, error) {
+            alert("Error: " + xhr.status + " - " + error);
+        },
+        dataType: "json",
+        success: function(data) {
+            var html = '';
+            $.each(data.photoset.photo, function(i, value) {
+                html += "<img src='https://live.staticflickr.com/" + value.server + "/" + value.id + "_" + value.originalsecret + "_c." + value.originalformat + "'>";
+            });
+            $(".bioPhoto").html(html);
+        }
     });
 
     $.ajax({
